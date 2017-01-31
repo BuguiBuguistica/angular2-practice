@@ -1,0 +1,90 @@
+/* Master Styles */
+@import 'https://fonts.googleapis.com/css?family=Lobster|Source+Sans+Pro';
+
+h1 {
+    color: #369;
+    font-size: 250%;
+}
+h2, h3 {
+    color: #444;
+}
+h1, h2, h3{
+    font-family: 'Lobster', cursive;
+}
+body {
+  margin: 2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  color:#202833;
+}
+.bg-app{
+    background: #dfe4e6;
+}
+.app{
+    background: white;
+    border-radius: 5px;
+}
+.app > .col-xs-4{
+    padding-left: 0;
+    
+}
+.app .app__navigation {
+    height: 100%;
+    background: #293341;
+    border-top-left-radius: 5px;
+}
+.app .app__navigation__brand{
+    padding: 1em;
+    line-height: 1em;
+    color:white;
+    line-height: 50px;
+    font-size: 2em;
+    background: repeating-linear-gradient(
+    -55deg,
+    #c2494d,
+     #c2494d 10px,
+    #af3a3e 10px,
+    #af3a3e 20px
+    );
+    border-top-left-radius: 5px;
+    font-family: 'Lobster', cursive;
+    text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+.app .app__navigation li a, .app .app__navigation ul{
+    padding: 0;
+}
+
+.app .app__navigation li{
+    padding: 2em 0 0 2em;
+    list-style: none;
+}
+
+.app .app__navigation li a, .app .app__navigation li a:hover{
+    color:#fff;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+select {
+    line-height: 34px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.38);
+    border-top:0;
+    border-right: 0;
+    border-left: 0;
+    font: inherit;
+    font-size: 1.2em;
+    outline: none;
+    padding: 3px 0;
+    width: 100%;
+    
+}
+select:focus{
+    border-bottom: 2px solid #009688;
+}
+.full-width{
+    width: 100%;
+}
+input, md-input{
+    font: inherit;
+    font-size: 1.2em;
+}

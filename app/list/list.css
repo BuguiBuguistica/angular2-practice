@@ -1,0 +1,37 @@
+.groceryList{
+
+}
+
+.groceryList .roundedBox{
+        width: 35px;
+    background: #c2494d;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 35px;
+    
+    color:#fff;
+    
+}
+.groceryList header{
+    line-height: 50px;
+    padding: 1em 1em 2em;
+}
+.groceryList header div:first-child{
+        float: left;
+    display: block;
+    margin: 18px 10px 10px 0;
+}
+
+.groceryList .form-container{
+    margin-top:2em;
+}
+
+md-input, select{
+    margin-bottom:60px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.card-container{
+    margin-top:20px;
+}

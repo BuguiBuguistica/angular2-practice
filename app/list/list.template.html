@@ -1,0 +1,15 @@
+<md-card *ngFor="let item of list" class="card-container">
+  <div class="row">
+    <div  class="col-xs-3 col-sm-2"><img style="height:50px" class="card-media md-media-sm" [src]="item.categoryId | listImageCategory"></div>
+    <div class="col-xs-9 col-sm-10">
+      <md-card-subtitle>{{item.categoryId | listCategory}}</md-card-subtitle>
+      <md-card-title>{{item.name}}</md-card-title>
+    </div>
+  </div>  
+  <md-card-content>
+           
+  </md-card-content>
+  <md-card-actions>
+    <button md-raised-button color="primary">VIEW</button>
+  </md-card-actions>
+</md-card>

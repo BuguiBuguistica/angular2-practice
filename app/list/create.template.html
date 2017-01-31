@@ -1,0 +1,46 @@
+<div class="row groceryList">
+    <header class="col-xs-12">
+        <div>
+            <i class="roundedBox fa fa-shopping-cart" aria-hidden="true"></i>
+        </div>
+        <div>
+            <h2>Create a New Grocery List</h2>
+        </div>
+    </header>
+</div>
+<div class="row form-container">
+    
+        <form>
+            <div class="col-xs-11">
+                <select class="full-width" required [(ngModel)]="list.category" name="category">
+                <option disabled value="">Select Category</option>
+                <option *ngFor="let p of categories" [value]="p">{{p}}</option>
+                </select>
+            </div>
+            <div class="col-xs-1" style="position:relative">
+                <div style="position:absolute; z-index:1; top:0; left:0; width:100%;">
+                    <div style="float:left; width:80%; height:30px; background:#ccc" (click)="displayColors()">
+                    </div>
+                    <div *ngIf="showColors">
+                        <div style="float:left; width:80%; height:30px; background:#FFEB4B" (click)="displayColors()">
+                        </div>
+                        <div style="float:left; width:80%; height:30px; background:#FFC14B" (click)="displayColors()">
+                        </div>
+                        <div style="float:left; width:80%; height:30px; background:#EEEBAF" (click)="displayColors()">
+                        </div>
+                        <div style="float:left; width:80%; height:30px; background:#8EA0C1" (click)="displayColors()">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <md-input class="full-width" md-theme="input" flex placeholder="Name" name="name" [(ngModel)]="list.name">
+                </md-input>
+                <md-input class="full-width textarea" placeholder="Note" ></md-input>
+            </div>
+            
+            
+            
+        </form>
+</div>
